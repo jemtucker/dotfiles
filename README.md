@@ -8,6 +8,6 @@ git clone git@github.com:jemtucker/dotfiles.git ~/.dotfiles
 ```
 
 ## Add dotfile
-Dotfiles are symlinked from `~/.dotfiles/<SOME_DIR>/\*.symlink` into the current
+Dotfiles are symlinked from `~/.dotfiles/<SOME_DIR>/*.symlink` into the current
 users home directory. Just add a file and re-run the bootstrap script. 
 
