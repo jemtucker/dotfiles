@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 
 X86_64_BIN="~/opt/bin/"
 OS_GDB_BIN="~/Documents/Scripts/rust-os-gdb/bin"
-export PATH="$HOME/.cargo/bin:$PATH:$X86_64_BIN:$OS_GDB_BIN"
+export PATH="$HOME/.cargo/bin:/usr/local/bin:$PATH:$X86_64_BIN:$OS_GDB_BIN"
 
 # Import secrets from non-version-controlled configuration files
 source .zshrc.secret
