@@ -5,4 +5,4 @@
 	default = simple
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
