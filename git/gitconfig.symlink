@@ -1,8 +1,11 @@
 # This is Git's per-user configuration file.
 [include]
-        path = ~/.gitconfig.secret
+	path = ~/.gitconfig.secret
+
 [push]
 	default = simple
+
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = /usr/local/bin/vim
+	editor = /usr/bin/vim
+
