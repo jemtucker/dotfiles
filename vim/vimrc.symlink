@@ -11,7 +11,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Installed plugins go here
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
-Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
