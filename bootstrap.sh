@@ -73,7 +73,16 @@ function link_file () {
 function bootstrap() {
     local src=
     for src in $(find -H "$DOTFILES_HOME" -maxdepth 2 -name '*.symlink' -not -path '*.git*'); do
-        dst="$HOME/.$(basename "${src%.*}")"
+        if [[ "$src" == *lib/* ]]; then
+            dst="$HOME/.lib/$(basename "${src%.*}")"
+            
+            # Make .lib directory if it does not exist
+            [[ -d "$HOME/.lib/" ]] || mkdir "$HOME/.lib/"
+
+        else
+            dst="$HOME/.$(basename "${src%.*}")"
+        fi
+
         link_file "$src" "$dst"
     done
 }

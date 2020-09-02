@@ -103,5 +103,7 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=~
 
+export CDPATH=".:/Users/jemtucker/src/gitlab.com/jem.tucker"
 
+source ~/.lib/kubectl
 
