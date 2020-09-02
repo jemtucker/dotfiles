@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Installed plugins go here
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,4 +51,7 @@ nnoremap <leader>gd :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
 nnoremap <leader>gt :YcmCompleter GetType<CR>
 
-
+" vim-go settings
+" allow use of old vim for now
+let g:go_version_warning = 0
+"let g:go_gopls_enabled = 0
